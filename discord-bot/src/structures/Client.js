@@ -12,6 +12,7 @@ module.exports = class DiscordBot extends Client {
       ]
     })
     this.commands = [];
+    this.database = new Collection()
   }
   registryCommands() {
     this.application.commands.set(this.commands)
