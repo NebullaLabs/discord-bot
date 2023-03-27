@@ -36,7 +36,8 @@ module.exports = class extends Event {
             })
           interaction.reply("vc n tava registrado ent te registrei")
         }
-        cmd.run(interaction)
+        const lang = require(`../../languages/${guild.lang}`)
+        cmd.run(interaction, lang)
       }
     }
   }

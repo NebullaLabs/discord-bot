@@ -8,7 +8,7 @@ module.exports = class extends Command {
       description: "Me Convide para seu servidor"
     })
   }
-  run = async(interaction) => {
+  run = async(interaction, lang) => {
     interaction.reply("Me adicione")
   }
 }
