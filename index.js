@@ -1,1 +1,1 @@
-console.log("ok")
+console.log("Ryu, the delicious! e thur estourador de pekas");
