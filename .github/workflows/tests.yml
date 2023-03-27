@@ -15,10 +15,10 @@ jobs:
         node-version: [16.x, 18.x, 19.x]
 
     steps:
-      - name: install yarn
-        uses: iCrawl/action-setup@v2
+      - name: Install Yarn
+        uses: bahmutov/setup-yarn@v2
         with:
-          version: latest
+          yarn-version: latest
 
       - uses: actions/checkout@v3
       - name: Use Yarn ${{ matrix.node-version }}
