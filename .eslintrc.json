@@ -1,0 +1,62 @@
+{
+    "root": true,
+    "env": {
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "jest",
+        "jsdoc"
+    ],
+    "ignorePatterns": [
+        "node_modules/",
+        ".git/",
+        ".vscode/"
+    ],
+    "rules": {
+        "jsdoc/no-undefined-types": 1,
+        "no-sync": "error",
+        "no-empty": "warn",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "no-cond-assign": [
+            "error",
+            "always"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "require-await": "error",
+        "prefer-const": "warn",
+        "semi": [
+            2,
+            "always"
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "no-useless-escape": "off",
+        "no-unsafe-optional-chaining": "error",
+        "no-template-curly-in-string": "error",
+        "no-unused-vars": [
+            "warn"
+        ]
+    }
+}
