@@ -2,3 +2,5 @@ node_modules/
 .replit
 replit.nix
 package-lock.json
+.eslintrc.json
+.env
