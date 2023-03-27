@@ -13,8 +13,8 @@
         }
     },
     "include": [
-        "src/**/*"
-, "src/NebulaLauncher.js"    ],
+        "src/**/*",
+    ],
     "exclude": [
         "node_modules"
     ]
