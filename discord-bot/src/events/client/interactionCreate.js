@@ -21,14 +21,23 @@ module.exports = class extends Event {
           idUser: interaction.user.id
         })
 
-        if(!user) {
-          await this.client.database.users.create({
-            idUser: interaction.user.id,
-            { $set: { registrado: true } }
+        const guild = await this.client.database.guilds.findOne({
+          idGuld: interaction.guild.id
+        })
+
+        if(!guild) {
+          await this.client.database.guilds.create({
+            idGuild: interaction.guild.id
           })
+        } if(!user) {
+          await this.client.database.users.create({ 
+            idUser: interaction.user.id },
+						{ $set: { registrado: true }
+            })
           interaction.reply("vc n tava registrado ent te registrei")
         }
         cmd.run(interaction)
-     }
+      }
+    }
   }
 }
