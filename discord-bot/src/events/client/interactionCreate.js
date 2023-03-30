@@ -1,4 +1,6 @@
 const Event = require("../../structures/base/Event");
+const Guild = require("../../database/schemas/Guild");
+const User = require("../../database/schemas/User");
 
 module.exports = class extends Event {
   constructor(client) {
@@ -17,21 +19,21 @@ module.exports = class extends Event {
 						await this.client.db.guilds.findById(interaction.guild.id) ||
 						new this.client.db.guilds({ idS: interaction.guild.id })
         }
-        const user = await this.client.database.users.findOne({
-          idUser: interaction.user.id
+        const user = User.findOne({
+          idU: interaction.user.id
         })
 
-        const guild = await this.client.database.guilds.findOne({
-          idGuld: interaction.guild.id
+        const guild = await Guild.findOne({
+          idS: interaction.guild.id
         })
 
         if(!guild) {
-          await this.client.database.guilds.create({
-            idGuild: interaction.guild.id
+          await Guild.create({
+            idS: interaction.guild.id
           })
         } if(!user) {
-          await this.client.database.users.create({ 
-            idUser: interaction.user.id },
+          await User.create({ 
+            idU: interaction.user.id },
 						{ $set: { registrado: true }
             })
           interaction.reply("vc n tava registrado ent te registrei")

@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 let guildSchema = new Schema({
-  idGuild: {
+  idS: {
     type: String
   },
   lang: {

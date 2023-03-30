@@ -34,6 +34,14 @@
         </sub>
       </a>
     </td>
+        <td align="center">
+      <a href="#">
+        <img src="https://cdn.discordapp.com/avatars/926619285940469831/9562b28b0bee6e16290934844d4d6ae9.png?size=2048" width="200px" alt="photo"/><br>
+        <sub>
+          <b>wzn#7418</b>
+        </sub>
+      </a>
+    </td>
        <td align="center">
       <a href="#">
         <img src="https://cdn.discordapp.com/avatars/506299442924879876/990591ca559a5c8df6ea27c19e7276ba.png?size=2048" width="200px" alt="photo"/><br>

@@ -47,6 +47,6 @@ module.exports = class DiscordBot extends Client {
     super.login(process.env.TOKEN)
     this.loadCommands()
     this.loadEvents()
-    await database.start()
+    database.start()
   }
 }
