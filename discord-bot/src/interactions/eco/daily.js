@@ -35,8 +35,8 @@ module.exports = class extends Command {
     if (daily !== null && cooldown - (Date.now() - daily) > 0) {
       return interaction.reply({ content: `<:no1:1090246696405049426> **» ${interaction.user.username},** Você precisa esperar até <t:${Math.ceil(time / 1000)}>`, ephemeral: true})
     } else {
-      interaction.reply(`<:yes1:1090246656336859246> **» ${interaction.user.username},** Você coletou seu **diário** com sucesso e ganhou <:Sufy:1090949687021944883> **${coins.toLocaleString} Sufy's**`)
-      interaction.reply({content: `<:estrelabonita:1089609393542271088> **»** Você sabia que com premium você ganha **2x** mais <:Sufy:1090949687021944883> **Sufy's**? Se você tivesse o premium teria recebido **${coins * 2} Sufy's**.`, components: [button]})
+      interaction.reply(`<:yes1:1090246656336859246> **» ${interaction.user.username},** Você coletou seu **diário** com sucesso e ganhou <:Sufy:1090949687021944883> **${coins.toLocaleString()} Sufy's**`)
+      interaction.followUp({content: `<:estrelabonita:1089609393542271088> **»** Você sabia que com premium você ganha **2x** mais <:Sufy:1090949687021944883> **Sufy's**? Se você tivesse o premium teria recebido **${coins * 2} Sufy's**.`, components: [Button]})
     }
   }
 }
