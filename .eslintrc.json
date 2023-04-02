@@ -2,7 +2,14 @@
     "root": true,
     "env": {
         "node": true,
-        "jest": true
+        "jest": true,
+        "es6": true,
+        "commonjs": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+		"sourceType": "script",
+		"requireConfigFile": false
     },
     "extends": [
         "eslint:recommended"
